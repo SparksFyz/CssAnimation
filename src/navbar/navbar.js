@@ -1,21 +1,17 @@
-;(function (){
+(function () {
     var previousScroll = 0;
-    var navbar = document.getElementById('navbar'),
-        navClasses = navbar.classList; // classList doesn't work <IE10
+    var navbar = document.getElementById('navbar');
+    var navClasses = navbar.classList;
 
-    window.addEventListener('scroll', function(e){
-       var currentScroll = window.scrollY;
-       var isDown = currentScroll > previousScroll;
+    window.addEventListener('scroll', function(e) {
+        var currentScroll = window.scrollY;
+        var isDown = currentScroll > previousScroll;
+        if ( isDown && !navClasses.contains('scrolled') ) {
+            navClasses.add('scrolled');
+        } else if ( !isDown ) {
+            navClasses.remove('scrolled');
+        }
 
-       if ( isDown && !navClasses.contains('scrolled') ){
-          // scrolling down, didn't add class yet
-          navClasses.add('scrolled'); // we hide the navbar
-       } else if ( !isDown ){
-          // scrolling up
-          navClasses.remove('scrolled'); // won't error if no class found
-       }
-
-       // always update position
-       previousScroll = currentScroll;
+        previousScroll = currentScroll;
     });
-}()); //run this anonymous function immediately
+}());
