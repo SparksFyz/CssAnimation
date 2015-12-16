@@ -3,15 +3,17 @@
     right: 0; left: 0; top: 0;
     /* your height */
     height: 80px;
-    background-color: black;
+    background-color: #e7e7e7;
+    opacity: 0.8;
+    font-family: Linux Libertine, Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
     /* .... */
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    -webkit-transition: -webkit-transform .3s;
-    -moz-transition: -moz-transform .3s;
-    -o-transition: transform .3s;
-    transition: transform .3s;
+    -webkit-transition: -webkit-transform .4s;
+    -moz-transition: -moz-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
 }
 #navbar.scrolled {
     /* subtract your height */
@@ -20,8 +22,31 @@
     transform: translate3d(0,-80px,0);
 }
 
+.menu-list {
+    width: 60%;
+    margin-left: 900px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.menu-item {
+    padding-top: 5px;
+    margin-left: 20px;
+    font-size: 24px;
+    display: inline-block;
+}
+
 .nav-text {
-    color: white;
+    color: black;
 }
 
 #content {
@@ -35,5 +60,5 @@
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 100px;
 }
