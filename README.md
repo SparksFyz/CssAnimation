@@ -25,6 +25,18 @@ This is a repository for learning css animation
 
 It's a common animation by using transition. A CSS `class` will be toggled when scrolling.Here `classList` is used and it just supports IE 10/11.
 
+### Mask Layer
+
+> add a mask layer on an element
+
+[Demo](http://sparksfyz.github.io/CssAnimation/mask-layer/mask.html)
+
+### Checkbox && ToggleButton
+
+[Checkbox](http://sparksfyz.github.io/CssAnimation/checkbox/checkbox.html)
+
+[ToggleButton](http://sparksfyz.github.io/CssAnimation/checkbox/toggle-button.html)
+
 ### Twelve Principles
 
 > This series have twelve demos about twelve principles in CSS Animation and all use keyframes.
