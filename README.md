@@ -5,8 +5,9 @@ This is a repository for learning css animation
 
 ### Install gulp
 
-* `npm install --global gulp`
-* create `gulpfile.js`
+* `npm install --save-dev gulp`
+* `npm install gulp-sass`
+* `npm install gulp-rename`
 * run `gulp`
 
 
@@ -31,11 +32,16 @@ It's a common animation by using transition. A CSS `class` will be toggled when 
 
 [Demo](http://sparksfyz.github.io/CssAnimation/mask-layer/mask.html)
 
-### Checkbox && ToggleButton
+### Checkbox && Button
 
 [Checkbox](http://sparksfyz.github.io/CssAnimation/checkbox/checkbox.html)
 
 [ToggleButton](http://sparksfyz.github.io/CssAnimation/checkbox/toggle-button.html)
+
+### Awesome Buttons
+
+[button1](http://sparksfyz.github.io/CssAnimation/checkbox/button.html)
+[button2](http://sparksfyz.github.io/CssAnimation/checkbox/button1.html)
 
 ### Twelve Principles
 
