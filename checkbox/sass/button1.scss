@@ -1,4 +1,6 @@
 $white: #FFFFFF;
+$gold: #FFDF00;
+$silver: #c0c0c0;
 
 body {
   background-color: black;
@@ -79,6 +81,58 @@ body {
     }
     .shadow {
       opacity: 1;
+    }
+  }
+
+  &.is-gold {
+    color: $gold;
+    border-color: $gold;
+    .shadow {
+      box-shadow: 0px 0px 40px $gold;
+    }
+    .bg {
+      background-color: $gold;
+    }
+  }
+
+  &.is-silver {
+    color: $silver;
+    border-color: $silver;
+    .shadow {
+      box-shadow: 0px 0px 40px $silver;
+    }
+    .bg {
+      background-color: $silver;
+    }
+  }
+
+  &.is-horizontal {
+    .bg {
+      width: 120%;
+    }
+    &:hover {
+      .bg:first-child {
+        transform: translateY(50%);
+      }
+      .bg:last-child {
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &.is-vertical {
+    .bg {
+      top: 0;
+      transform: skewX(-8deg) translateY(0) translateX(-80%);
+      &:last-child {
+        transform: translateX(80%);
+      }
+    }
+
+    &:hover {
+      .bg {
+        transform: translateX(0);
+      }
     }
   }
 }

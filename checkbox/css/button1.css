@@ -63,3 +63,30 @@ body {
     transition-delay: none; }
   .button:hover .shadow {
     opacity: 1; }
+  .button.is-gold {
+    color: #FFDF00;
+    border-color: #FFDF00; }
+    .button.is-gold .shadow {
+      box-shadow: 0px 0px 40px #FFDF00; }
+    .button.is-gold .bg {
+      background-color: #FFDF00; }
+  .button.is-silver {
+    color: #c0c0c0;
+    border-color: #c0c0c0; }
+    .button.is-silver .shadow {
+      box-shadow: 0px 0px 40px #c0c0c0; }
+    .button.is-silver .bg {
+      background-color: #c0c0c0; }
+  .button.is-horizontal .bg {
+    width: 120%; }
+  .button.is-horizontal:hover .bg:first-child {
+    transform: translateY(50%); }
+  .button.is-horizontal:hover .bg:last-child {
+    transform: translateY(-50%); }
+  .button.is-vertical .bg {
+    top: 0;
+    transform: skewX(-8deg) translateY(0) translateX(-80%); }
+    .button.is-vertical .bg:last-child {
+      transform: translateX(80%); }
+  .button.is-vertical:hover .bg {
+    transform: translateX(0); }
