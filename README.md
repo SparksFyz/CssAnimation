@@ -43,6 +43,10 @@ It's a common animation by using transition. A CSS `class` will be toggled when 
 [button1](http://sparksfyz.github.io/CssAnimation/checkbox/button.html)
 [button2](http://sparksfyz.github.io/CssAnimation/checkbox/button1.html)
 
+### Glitch
+
+[Demo](http://sparksfyz.github.io/CssAnimation/glitch/glitch.html)
+
 ### Twelve Principles
 
 > This series have twelve demos about twelve principles in CSS Animation and all use keyframes.
