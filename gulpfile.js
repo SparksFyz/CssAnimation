@@ -16,6 +16,12 @@ gulp.task('button', function() {
   .pipe(gulp.dest('./checkbox/css'));
 });
 
+gulp.task('glitch', function() {
+  gulp.src('./glitch/sass/*.scss')
+  .pipe(sass())
+  .pipe(gulp.dest('./glitch/css'));
+});
+
 // gulp.task('default', function() {
 //   gulp.run('sass');
 //   gulp.run('button');
@@ -32,7 +38,8 @@ gulp.task('button', function() {
 gulp.task('watch', function() {
   gulp.watch('./TwelvePrinciples/sass/*.scss', ['sass']);
   gulp.watch('./checkbox/sass/*.scss', ['button']);
+  gulp.watch('./glitch/sass/*.scss', ['button']);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'sass', 'button']);
+gulp.task('default', ['watch', 'sass', 'button', 'glitch']);
